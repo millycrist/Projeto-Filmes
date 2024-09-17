@@ -1,0 +1,114 @@
+/* globals.css */
+
+
+/* Adiciona um fundo claro e espaçamento ao conteúdo */
+body {
+  background-color: #f4f4f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo geral para os containers */
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Estilo para o título principal */
+h1 {
+  font-size: 2rem; /* Tamanho do título principal */
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para o card da série */
+.card {
+  border-radius: 8px; /* Arredondar mais os cantos */
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais leve */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Alinha o conteúdo verticalmente */
+  max-width: 300px; /* Largura máxima do card */
+  margin: 1rem; /* Espaçamento entre os cards */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.02); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Imagem do card */
+.card-img {
+  height: 200px; /* Altura da imagem reduzida */
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+/* Corpo do card */
+.card-body {
+  padding: 1rem; /* Padding reduzido */
+  flex-grow: 1; /* Faz com que o corpo do card cresça para preencher o espaço */
+}
+
+/* Título do card */
+.card-title {
+  font-size: 1.25rem; /* Tamanho da fonte do título */
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Texto do card */
+.card-text {
+  font-size: 0.875rem; /* Fonte menor */
+  color: #555;
+  line-height: 1.4;
+  overflow: hidden; /* Garante que o texto não ultrapasse o card */
+  text-overflow: ellipsis; /* Adiciona reticências no final do texto */
+  white-space: nowrap; /* Impede a quebra de linha */
+}
+
+/* Botão de voltar */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; /* Padding reduzido */
+  font-size: 0.875rem; /* Fonte menor */
+  color: #fff;
+  cursor: pointer;
+  text-align: center; /* Centraliza o texto */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transition: background-color 0.3s;
+}
+
+/* Estilo para o container da imagem e informações */
+.row {
+  margin-top: 1rem;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinha o conteúdo verticalmente */
+}
+
+.col-md-8 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Garante que os cards fiquem alinhados e responsivos */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte se necessário */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+}
+
+.card + .card {
+  margin-top: 1rem;
+}
